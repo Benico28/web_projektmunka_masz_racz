@@ -1,0 +1,74 @@
+body{
+    color: #fff;
+    background-color: #2e2e2e;
+}
+
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #1d1d1d;
+}
+body.light-mode .navMenu, body.light-mode .rovidBem{
+    background-color: #efefef;
+}
+
+body.light-mode .navMenu {
+    box-shadow: 0 4px 12px rgba(187, 26, 26, 0.4);
+}
+body.light-mode .autokLink a{
+    color: #1d1d1d;
+}
+
+body.light-mode .rovidBem {
+    box-shadow: 0 4px 12px #bb1a1a; 
+}
+
+body.light-mode .logo, 
+body.light-mode h1 {
+    color: #bb1a1a;
+    border-color: #bb1a1a;
+}
+
+body.light-mode .autokLink {
+    border-color: #bb1a1a;
+}
+
+body.light-mode .autokLink a:hover {
+    color: #bb1a1a;
+}
+
+.navMenu{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navMenu a{
+    text-decoration: none;
+}
+
+.autokLink a{
+    color: #bb1a1a;
+}
+
+.autokLink a:hover, h1, .logo{
+    color: #ffc400;
+}
+
+.autokLink, .logo{
+    border: 1px solid #ffc400;
+    border-radius: 10px;
+}
+
+h1{
+    border-bottom: 1px solid #ffc400;
+}
+
+.rovidBem, .navMenu{
+    background-color: #1d1d1d;
+}
+
+.rovidBem{
+    box-shadow: 0 4px 8px 0 #ffc400;
+}
+
+.autokLink{
+    width: 335px;
+}
