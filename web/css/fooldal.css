@@ -12,7 +12,7 @@ body.light-mode .navMenu, body.light-mode .rovidBem{
 }
 
 body.light-mode .navMenu {
-    box-shadow: 0 4px 12px rgba(187, 26, 26, 0.4);
+    box-shadow: 0 4px 12px #bb1a1a66;
 }
 body.light-mode .autokLink a{
     color: #1d1d1d;
@@ -22,18 +22,32 @@ body.light-mode .rovidBem {
     box-shadow: 0 4px 12px #bb1a1a; 
 }
 
+body.light-mode .autokLink,
 body.light-mode .logo, 
-body.light-mode h1 {
-    color: #bb1a1a;
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode .elvalaszto {
     border-color: #bb1a1a;
 }
 
-body.light-mode .autokLink {
-    border-color: #bb1a1a;
+body.light-mode .autokLink a:hover,
+body.light-mode .logo, 
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: #bb1a1a;
+}
+body.light-mode .form-control:focus, 
+body.light-mode .form-select:valid:focus{
+    box-shadow: none;
+    border: 2px solid #bb1a1a;
 }
 
-body.light-mode .autokLink a:hover {
-    color: #bb1a1a;
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .navMenu{
@@ -44,11 +58,7 @@ body.light-mode .autokLink a:hover {
     text-decoration: none;
 }
 
-.autokLink a{
-    color: #bb1a1a;
-}
-
-.autokLink a:hover, h1, .logo{
+.autokLink a:hover, h1, .logo, .autokLink a, h2, h3{
     color: #ffc400;
 }
 
@@ -57,7 +67,7 @@ body.light-mode .autokLink a:hover {
     border-radius: 10px;
 }
 
-h1{
+h1, h2, h3{
     border-bottom: 1px solid #ffc400;
 }
 
@@ -71,4 +81,11 @@ h1{
 
 .autokLink{
     width: 335px;
+}
+.elvalaszto{
+    border-left: 1px solid #ffc400;
+}
+.form-control:focus, .form-select:valid:focus{
+    box-shadow: none;
+    border: 2px solid #ffc400;
 }
