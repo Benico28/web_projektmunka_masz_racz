@@ -1,10 +1,15 @@
 body{
-    color: #fff;
     background-color: #2e2e2e;
+}
+body, a{
+    color: #fff;
 }
 
 body.light-mode {
     background-color: #f4f4f4;
+}
+body.light-mode,
+body.light-mode a{
     color: #1d1d1d;
 }
 body.light-mode .navMenu, body.light-mode .rovidBem{
@@ -31,7 +36,7 @@ body.light-mode .elvalaszto {
     border-color: #bb1a1a;
 }
 
-body.light-mode .autokLink a:hover,
+body.light-mode a:hover,
 body.light-mode .logo, 
 body.light-mode h1,
 body.light-mode h2,
@@ -54,11 +59,11 @@ header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.navMenu a{
+a{
     text-decoration: none;
 }
 
-.autokLink a:hover, h1, .logo, .autokLink a, h2, h3{
+a:hover, h1, .logo, .autokLink a, h2, h3{
     color: #ffc400;
 }
 
@@ -88,4 +93,77 @@ h1, h2, h3{
 .form-control:focus, .form-select:valid:focus{
     box-shadow: none;
     border: 2px solid #ffc400;
+}
+footer li{
+    list-style-type: none;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .autokLink {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navMenu .row {
+        padding: 10px 0;
+    }
+
+    .elvalaszto {
+        border-left: none;
+        border-top: 1px solid #ffc400;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    body.light-mode .elvalaszto {
+        border-top-color: #bb1a1a;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .fs-4 {
+        font-size: 1.1rem !important;
+    }
+
+    .rovidBem img {
+        margin-top: 1rem;
+    }
+   
+    .logo {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 1.5rem !important;
+    }
+
+    .navMenu .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .tema {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navMenu .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tema {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
+    
+    .rovidBem {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

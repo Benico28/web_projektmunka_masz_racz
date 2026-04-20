@@ -1,0 +1,62 @@
+var tema = document.querySelector(".tema");
+var temaKicsi = document.querySelector(".temaKicsi");
+var body = document.body;
+
+function gombokFrissitese(isLightMode) {
+    var reszletekGombok = document.querySelectorAll(".btn-outline-light, .btn-outline-dark");
+    var erdekelGombok = document.querySelectorAll(".btn-outline-warning, .btn-outline-danger");
+
+    reszletekGombok.forEach(gomb => {
+        if (isLightMode) {
+            gomb.classList.remove("btn-outline-light");
+            gomb.classList.add("btn-outline-dark");
+        } else {
+            gomb.classList.remove("btn-outline-dark");
+            gomb.classList.add("btn-outline-light");
+        }
+    });
+
+    erdekelGombok.forEach(gomb => {
+        if (!gomb.classList.contains('tema') && !gomb.classList.contains('temaKicsi')) {
+            if (isLightMode) {
+                gomb.classList.remove("btn-outline-warning");
+                gomb.classList.add("btn-outline-danger");
+            } else {
+                gomb.classList.remove("btn-outline-danger");
+                gomb.classList.add("btn-outline-warning");
+            }
+        }
+    });
+}
+
+tema.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    var isLight = body.classList.contains('light-mode');
+    
+    if (isLight) {
+        tema.textContent = '🌙';
+        tema.classList.remove("btn-outline-warning");
+        tema.classList.add("btn-outline-danger");
+    } else {
+        tema.textContent = '☀️';
+        tema.classList.remove("btn-outline-danger");
+        tema.classList.add("btn-outline-warning");
+    }
+    gombokFrissitese(isLight);
+});
+
+temaKicsi.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    var isLight = body.classList.contains('light-mode');
+    
+    if (isLight) {
+        temaKicsi.textContent = '🌙';
+        temaKicsi.classList.remove("btn-outline-warning");
+        temaKicsi.classList.add("btn-outline-danger");
+    } else {
+        temaKicsi.textContent = '☀️';
+        temaKicsi.classList.remove("btn-outline-danger");
+        temaKicsi.classList.add("btn-outline-warning");
+    }
+    gombokFrissitese(isLight);
+});
