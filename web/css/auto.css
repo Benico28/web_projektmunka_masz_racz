@@ -29,7 +29,8 @@ body.light-mode .rovidBem {
 
 body.light-mode .autokLink,
 body.light-mode .logo, 
-body.light-mode h1{
+body.light-mode h1,
+body.light-mode .bal{
     border-color: #bb1a1a;
 }
 
@@ -83,4 +84,50 @@ footer li{
 }
 .kiscim{
     color:#ababab;
+}
+.bal{
+    border-left: 1px solid #ffc400;
+}
+@media (max-width: 991.98px){
+    .autokLink {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navMenu .row {
+        padding: 10px 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .logo {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 1.5rem !important;
+    }
+    .tema {
+        padding: 5px 10px;
+    }
+    .bal {
+        border-left: none;
+        border-top: 1px solid #ffc400;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    body.light-mode .bal {
+        border-top-color: #bb1a1a;
+    }
+}
+@media (max-width: 575.98px) {
+    .navMenu .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tema {
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
 }

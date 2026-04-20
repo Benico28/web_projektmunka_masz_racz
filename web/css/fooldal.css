@@ -110,6 +110,8 @@ footer li{
 
     .navMenu .row {
         padding: 10px 0;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .elvalaszto {
@@ -139,11 +141,6 @@ footer li{
         display: inline-block;
         white-space: nowrap;
         font-size: 1.5rem !important;
-    }
-
-    .navMenu .row {
-        margin-right: 0;
-        margin-left: 0;
     }
 
     .tema {
