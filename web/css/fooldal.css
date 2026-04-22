@@ -1,56 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-main{
-    
-    background: #000000;
-background: linear-gradient(180deg, rgba(0, 0, 0, 1) 44%, rgba(255, 255, 255, 1) 100%);
+body{
+    background-image: url(../kepek/nyyitóoldalkep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(7px);
 }
-
 body, a{
     color: #fff;
 }
 
-body.light-mode {
-    background-color: #f4f4f4;
-}
 body.light-mode,
 body.light-mode a{
     color: #1d1d1d;
 }
-body.light-mode .navMenu, body.light-mode .rovidBem{
+body.light-mode .navMenu{
     background-color: #efefef;
+}
+body.light-mode .rovidBem{
+    background-color: rgba(239, 239, 239, 0.5);
 }
 
 body.light-mode .navMenu {
-    box-shadow: 0 4px 12px #bb1a1a66;
+    box-shadow: 0 4px 12px #d18016;
 }
 body.light-mode .autokLink a{
     color: #1d1d1d;
 }
 
 body.light-mode .rovidBem {
-    box-shadow: 0 4px 12px #bb1a1a; 
+    box-shadow: 0 4px 12px #d18016; 
 }
 
 body.light-mode .autokLink,
-body.light-mode .logo, 
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3,
 body.light-mode .elvalaszto {
-    border-color: #bb1a1a;
+    border-color: #d18016;
 }
 
 body.light-mode a:hover,
-body.light-mode .logo, 
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3 {
-    color: #bb1a1a;
+    color: #d18016;
 }
 body.light-mode .form-control:focus, 
-body.light-mode .form-select:valid:focus{
+body.light-mode .form-select:valid:focus,
+body.light-mode .form-control,
+body.light-mode .form-select{
     box-shadow: none;
-    border: 2px solid #bb1a1a;
+    border: none;
+    background-color: #efefef;
+    color: #1d1d1d;
+}
+body.light-mode .form-control::placeholder{
+    color: #1d1d1d;
 }
 
 header{
@@ -67,61 +73,43 @@ a{
     text-decoration: none;
 }
 
-a:hover, .logo, .autokLink a{
-    color: #fff;
-}
-h1, h2, h3{
-    color: #fff;
+a:hover, h1, .logo, .autokLink a, h2, h3{
+    color: #d18016;
 }
 
-.autokLink, .logo{
-    border: 1px solid #fff;
+.autokLink{
     border-radius: 10px;
 }
 
 h1, h2, h3{
-    border-bottom: 1px solid #fff;
-}
-.kezdokepesresz{
-    background-image: url(..//kepek/porsche.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 900px;
-}
-.felcim{
-    padding-top: 150px;
-    padding-left: 80px;
-    font-size: 35px;
-    font-family: "Audiowide", sans-serif;
-}
-.kezdokepesresz .alcim{
-    padding-left: 290px;
-    font-size: 20px;
-    color: #b6b6b6;
+    border-bottom: 1px solid #d18016;
 }
 
+.rovidBem{
+    background-color: rgba(29, 29, 29, 0.4);
+}
 .navMenu{
-    background-color: #000;
-}
-.rovidBem{
-    background: #000000;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0.21) 0%, rgba(255, 255, 255, 1) 100%);
+    background-color: #1d1d1d;
 }
 
 .rovidBem{
-    box-shadow: 0 4px 8px 0 #fff;
+    box-shadow: 0 4px 8px 0 #d18016;
 }
 
 .autokLink{
     width: 335px;
 }
 .elvalaszto{
-    border-left: 1px solid #fff;
+    border-left: 1px solid #d18016;
 }
-.form-control:focus, .form-select:valid:focus{
+.form-control:focus, .form-select:valid:focus, .form-control, .form-select{
     box-shadow: none;
-    border: 2px solid #fff;
+    border: none;
+    background-color: #1d1d1d;
+    color: #efefef;
+}
+.form-control::placeholder{
+    color: #efefef;
 }
 footer li{
     list-style-type: none;
@@ -144,13 +132,13 @@ footer li{
 
     .elvalaszto {
         border-left: none;
-        border-top: 1px solid #ffc400;
+        border-top: 1px solid #d18016;
         margin-top: 2rem;
         padding-top: 2rem;
     }
 
     body.light-mode .elvalaszto {
-        border-top-color: #bb1a1a;
+        border-top-color: #d18016;
     }
 
     h1 {
