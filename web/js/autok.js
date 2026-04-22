@@ -1,6 +1,7 @@
 var tema = document.querySelector(".tema");
 var temaKicsi = document.querySelector(".temaKicsi");
 var body = document.body;
+var logo = document.querySelector(".logo")
 
 function gombokFrissitese(isLightMode) {
     var reszletekGombok = document.querySelectorAll(".btn-outline-light, .btn-outline-dark");
@@ -15,18 +16,6 @@ function gombokFrissitese(isLightMode) {
             gomb.classList.add("btn-outline-light");
         }
     });
-
-    erdekelGombok.forEach(gomb => {
-        if (!gomb.classList.contains('tema') && !gomb.classList.contains('temaKicsi')) {
-            if (isLightMode) {
-                gomb.classList.remove("btn-outline-warning");
-                gomb.classList.add("btn-outline-danger");
-            } else {
-                gomb.classList.remove("btn-outline-danger");
-                gomb.classList.add("btn-outline-warning");
-            }
-        }
-    });
 }
 
 tema.addEventListener('click', () => {
@@ -36,11 +25,13 @@ tema.addEventListener('click', () => {
     if (isLight) {
         tema.textContent = '🌙';
         tema.classList.remove("btn-outline-warning");
-        tema.classList.add("btn-outline-danger");
+        tema.classList.add("btn-outline-dark");
+        logo.innerHTML = '<img class="w-50" src="kepek/logoVilagos.png" alt="logo" title="logo"></img>'
     } else {
         tema.textContent = '☀️';
-        tema.classList.remove("btn-outline-danger");
+        tema.classList.remove("btn-outline-dark");
         tema.classList.add("btn-outline-warning");
+        logo.innerHTML = '<img class="w-50" src="kepek/logo.png" alt="logo" title="logo"></img>'
     }
     gombokFrissitese(isLight);
 });
@@ -52,11 +43,13 @@ temaKicsi.addEventListener('click', () => {
     if (isLight) {
         temaKicsi.textContent = '🌙';
         temaKicsi.classList.remove("btn-outline-warning");
-        temaKicsi.classList.add("btn-outline-danger");
+        temaKicsi.classList.add("btn-outline-dark");
+        logo.innerHTML = '<img class="w-50" src="kepek/logoVilagos.png" alt="logo" title="logo"></img>'
     } else {
         temaKicsi.textContent = '☀️';
-        temaKicsi.classList.remove("btn-outline-danger");
+        temaKicsi.classList.remove("btn-outline-dark");
         temaKicsi.classList.add("btn-outline-warning");
+        logo.innerHTML = '<img class="w-50" src="kepek/logo.png" alt="logo" title="logo"></img>'
     }
     gombokFrissitese(isLight);
 });

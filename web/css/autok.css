@@ -1,42 +1,47 @@
 body{
-    background-color: #2e2e2e;
+    background-image: url(../kepek/nyyitóoldalkep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(7px);
 }
 body, a{
     color: #fff;
 }
 
-body.light-mode {
-    background-color: #f4f4f4;
-}
 body.light-mode,
 body.light-mode a{
     color: #1d1d1d;
 }
-body.light-mode .navMenu, body.light-mode .rovidBem{
+body.light-mode .navMenu{
     background-color: #efefef;
+}
+body.light-mode .rovidBem{
+    background-color: rgba(239, 239, 239, 0.5);
 }
 
 body.light-mode .navMenu {
-    box-shadow: 0 4px 12px #bb1a1a;
+    box-shadow: 0 4px 12px #d18016;
 }
 body.light-mode .autokLink a{
     color: #1d1d1d;
 }
 
 body.light-mode .rovidBem {
-    box-shadow: 0 4px 12px #bb1a1a; 
+    box-shadow: 0 4px 12px #d18016; 
 }
 
 body.light-mode .autokLink,
 body.light-mode .logo, 
 body.light-mode h1{
-    border-color: #bb1a1a;
+    border-color: #d18016;
 }
 
 body.light-mode a:hover,
 body.light-mode .logo, 
 body.light-mode h1{
-    color: #bb1a1a;
+    color: #d18016;
 }
 
 header{
@@ -53,25 +58,19 @@ a{
     text-decoration: none;
 }
 
-a:hover, h1, .logo, .autokLink a, h2, h3{
-    color: #ffc400;
+a:hover, h1, .logo, .autokLink a{
+    color: #d18016;
 }
 
-.autokLink, .logo{
-    border: 1px solid #ffc400;
-    border-radius: 10px;
+.rovidBem{
+    background-color: rgba(29, 29, 29, 0.4);
 }
-
-h1, h2, h3{
-    border-bottom: 1px solid #ffc400;
-}
-
-.rovidBem, .navMenu{
+.navMenu{
     background-color: #1d1d1d;
 }
 
 .rovidBem{
-    box-shadow: 0 4px 8px 0 #ffc400;
+    box-shadow: 0 4px 8px 0 #d18016;
 }
 
 .autokLink{

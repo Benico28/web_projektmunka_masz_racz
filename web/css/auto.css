@@ -1,44 +1,48 @@
 body{
-    background-color: #2e2e2e;
+    background-image: url(../kepek/nyyitóoldalkep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
 }
 body, a{
     color: #fff;
 }
 
-body.light-mode {
-    background-color: #f4f4f4;
-}
 body.light-mode,
 body.light-mode a{
     color: #1d1d1d;
 }
-body.light-mode .navMenu, body.light-mode .rovidBem{
+body.light-mode .navMenu{
     background-color: #efefef;
 }
-
+body.light-mode .rovidBem{
+    background-color: rgba(239, 239, 239, 0.5);
+}
 body.light-mode .navMenu {
-    box-shadow: 0 4px 12px #bb1a1a;
+    box-shadow: 0 4px 12px #d18016;
 }
 body.light-mode .autokLink a{
     color: #1d1d1d;
 }
 
 body.light-mode .rovidBem {
-    box-shadow: 0 4px 12px #bb1a1a; 
+    box-shadow: 0 4px 12px #d18016; 
 }
 
 body.light-mode .autokLink,
 body.light-mode .logo, 
 body.light-mode h1,
 body.light-mode .bal{
-    border-color: #bb1a1a;
+    border-color: #d18016;
 }
 
 body.light-mode a:hover,
 body.light-mode .logo, 
 body.light-mode h1,
 body.light-mode main i{
-    color: #bb1a1a;
+    color: #d18016;
 }
 
 header{
@@ -56,24 +60,21 @@ a{
 }
 
 a:hover, h1, .logo, .autokLink a, main i{
-    color: #ffc400;
+    color: #d18016;
 }
 
-.autokLink, .logo{
-    border: 1px solid #ffc400;
-    border-radius: 10px;
+h1{
+    border-bottom: 1px solid #d18016;
 }
-
-h1, h2, h3{
-    border-bottom: 1px solid #ffc400;
+.rovidBem{
+     background-color: rgba(29, 29, 29, 0.4);
 }
-
-.rovidBem, .navMenu{
+.navMenu{
     background-color: #1d1d1d;
 }
 
 .rovidBem{
-    box-shadow: 0 4px 8px 0 #ffc400;
+    box-shadow: 0 4px 8px 0 #d18016;
 }
 
 .autokLink{
@@ -83,10 +84,10 @@ footer li{
     list-style-type: none;
 }
 .kiscim{
-    color:#ababab;
+    color:#777;
 }
 .bal{
-    border-left: 1px solid #ffc400;
+    border-left: 1px solid #d18016;
 }
 @media (max-width: 991.98px){
     .autokLink {
@@ -111,13 +112,13 @@ footer li{
     }
     .bal {
         border-left: none;
-        border-top: 1px solid #ffc400;
+        border-top: 1px solid #d18016;
         margin-top: 2rem;
         padding-top: 2rem;
     }
 
     body.light-mode .bal {
-        border-top-color: #bb1a1a;
+        border-top-color: #d18016;
     }
 }
 @media (max-width: 575.98px) {

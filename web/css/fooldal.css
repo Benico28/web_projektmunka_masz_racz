@@ -77,10 +77,6 @@ a:hover, h1, .logo, .autokLink a, h2, h3{
     color: #d18016;
 }
 
-.autokLink{
-    border-radius: 10px;
-}
-
 h1, h2, h3{
     border-bottom: 1px solid #d18016;
 }
