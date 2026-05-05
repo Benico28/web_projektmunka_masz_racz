@@ -1,5 +1,5 @@
 body{
-    background-image: url(../kepek/nyyitóoldalkep.jpg);
+    background-image: url(../kepek/nyyitóoldalkep.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,6 +109,66 @@ h1, h2, h3{
 }
 footer li{
     list-style-type: none;
+}
+.velemeny-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: #d18016 transparent;
+}
+
+.velemeny-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.velemeny-wrapper::-webkit-scrollbar-thumb {
+    background: #d18016;
+    border-radius: 10px;
+}
+
+.velemeny-kartya {
+    width: 300px;
+    height: 220px;
+    transition: height 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.velemeny-szoveg-container {
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.velemeny-szoveg {
+    margin-bottom: 0;
+}
+
+.velemeny-kartya.nyitva {
+    height: auto;
+    min-height: 220px;
+}
+
+.velemeny-kartya.nyitva .velemeny-szoveg-container {
+    height: auto;
+}
+.small{
+    color: #d18016;
+}
+.nyito-ikon {
+    color: #d18016;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.velemeny-kartya.nyitva .nyito-ikon i {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+body.light-mode .velemeny-kartya {
+    background-color: rgba(239, 239, 239, 0.8);
+    box-shadow: 0 2px 8px rgba(209, 128, 22, 0.3);
 }
     
 
