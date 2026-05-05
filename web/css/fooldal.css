@@ -167,7 +167,7 @@ footer li{
 }
 
 body.light-mode .velemeny-kartya {
-    background-color: rgba(239, 239, 239, 0.8);
+    background-color: rgba(239, 239, 239, 0.6);
     box-shadow: 0 2px 8px rgba(209, 128, 22, 0.3);
 }
     
