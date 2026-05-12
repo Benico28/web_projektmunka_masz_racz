@@ -120,6 +120,9 @@ footer li{
     body.light-mode .bal {
         border-top-color: #d18016;
     }
+    .jav{
+        margin: 0px;
+    }
 }
 @media (max-width: 575.98px) {
     .navMenu .d-flex {
@@ -130,5 +133,18 @@ footer li{
     .tema {
         margin-right: 0 !important;
         margin-bottom: 1rem;
+    }
+    .rovidBem{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .jav{
+        margin: 0px;
+    }
+    .elso{
+        padding-top: 2rem;
+    }
+    .utolso{
+        padding-bottom: 2rem;
     }
 }

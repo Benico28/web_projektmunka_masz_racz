@@ -235,4 +235,10 @@ body.light-mode .velemeny-kartya {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .jav, .javitas img{
+        margin: 0px;
+    }
+    .javitas{
+        padding: 0px;
+    }
 }

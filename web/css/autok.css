@@ -79,3 +79,12 @@ a:hover, h1, .logo, .autokLink a{
 footer li{
     list-style-type: none;
 }
+@media (max-width: 575.98px){
+    .jav{
+        margin: 0px;
+    }
+    footer .rovidBem{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
